@@ -21,3 +21,8 @@ Arquivos e frames permanecem no navegador. Use modelos e imagens autorizados. Re
 `npm test` e `npm run build`. Testes carregam um GLB real mínimo com GLTFLoader, verificam normalização, rejeição de recursos externos e limpeza de câmera/modelo. O CI repete esses comandos. Não substituem testes WebGL/câmera em dispositivos reais ou validação de todos os exportadores GLB.
 
 Stack: React, TypeScript, Three.js, React Three Fiber e Drei. Esta edição adapta a interface para execução portátil; o projeto do Studio não é sobrescrito. Licença de redistribuição do código ainda não definida pelo autor; dependências mantêm suas próprias licenças.
+
+
+## Início e diagnóstico simplificados
+
+Após `npm ci`, execute `npm run diagnostico` para verificar Node, dependências, build e presença de configuração sem revelar chaves ou consumir cota. Execute `npm run iniciar` para compilar a versão atual e abrir o servidor local em um único terminal. A faixa de estado da interface distingue configuração ausente e integração ainda não comprovada. Encontrar uma chave não confirma que ela é válida nem que existe cota gratuita. Nenhum teste de geração é iniciado automaticamente.
